@@ -16,4 +16,14 @@ public class TrackCoach implements Coach {
 		return "Run a had 5k";
 	}
 
+	//init method
+	public void doMyStartupStuff() {
+		System.out.println("doMyStartupStuff");
+	}
+
+	//destroy method
+	public void doMyCleanupStuff() {
+		System.out.println("doMyCleanupStuff");
+	}
+
 }
