@@ -22,6 +22,8 @@
 	<!-- Setter injection -->
 	<bean id="myCricketCoach" class="org.nick.springdemo.CricketCoach">
 		<property name="fs" ref="myFortuneService"/>
+		<property name="emailAddress" value="abc@gmail.com"></property>
+		<property name="team" value="INDIA"></property>
 	</bean>
 </beans>
 
