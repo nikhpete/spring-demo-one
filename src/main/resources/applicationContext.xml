@@ -9,6 +9,8 @@
 
 
 	<!-- Define your beans here -->
+	
+	<context:property-placeholder location="classpath:sport.properties"/>
 
 	<!-- define the dependency -->
 	<bean id="myFortuneService"
@@ -22,8 +24,8 @@
 	<!-- Setter injection -->
 	<bean id="myCricketCoach" class="org.nick.springdemo.CricketCoach">
 		<property name="fs" ref="myFortuneService"/>
-		<property name="emailAddress" value="abc@gmail.com"></property>
-		<property name="team" value="INDIA"></property>
+		<property name="emailAddress" value="${foo.email}"></property>
+		<property name="team" value="${foo.team}"></property>
 	</bean>
 </beans>
 
