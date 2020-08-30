@@ -7,6 +7,7 @@ public class TrackCoach implements Coach {
 	private FortuneService fs;
 
 	public TrackCoach(FortuneService fs) {
+		System.out.println("New Instance created");
 		this.fs = fs;
 	}
 
