@@ -2,6 +2,9 @@ package org.nick.springdemo;
 
 import org.nick.springdemo.service.FortuneService;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class TrackCoach implements Coach {
 
 	private FortuneService fs;
