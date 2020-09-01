@@ -1,4 +1,4 @@
-package org.nick.springdemo;
+package org.nick.springdemo.model;
 
 public interface Coach {
 

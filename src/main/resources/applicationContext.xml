@@ -17,12 +17,12 @@
 		class="org.nick.springdemo.service.HappyFortuneService"></bean>
 
 	<!-- constructor injection -->
-	<bean id="myCoach" class="org.nick.springdemo.TrackCoach">
+	<bean id="myCoach" class="org.nick.springdemo.model.TrackCoach">
 		<constructor-arg ref="myFortuneService" />
 	</bean>
 
 	<!-- Setter injection -->
-	<bean id="myCricketCoach" class="org.nick.springdemo.CricketCoach">
+	<bean id="myCricketCoach" class="org.nick.springdemo.model.CricketCoach">
 		<property name="fs" ref="myFortuneService"/>
 		<property name="emailAddress" value="${foo.email}"></property>
 		<property name="team" value="${foo.team}"></property>

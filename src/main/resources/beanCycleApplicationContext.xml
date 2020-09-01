@@ -15,7 +15,7 @@
 		class="org.nick.springdemo.service.HappyFortuneService"></bean>
 
 	<!-- constructor injection -->
-	<bean id="myCoach" class="org.nick.springdemo.TrackCoach"
+	<bean id="myCoach" class="org.nick.springdemo.model.TrackCoach"
 		init-method="doMyStartupStuff" destroy-method="doMyCleanupStuff">
 		<constructor-arg ref="myFortuneService" />
 	</bean>

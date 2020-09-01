@@ -1,5 +1,6 @@
 package org.nick.springdemo;
 
+import org.nick.springdemo.model.Coach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SettterDemoApp {
